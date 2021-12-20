@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>"Siis leiad sa selle" / "And then you’ll find it"</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:image" content="coverart.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: "font-medium";
+        src: url("/fonts/font-medium.woff") format("woff"),
+          url("/fonts/font-medium.woff2") format("woff2");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+      * {
+        box-sizing: border-box;
+        transition: background 300ms;
+        -webkit-font-smoothing: auto;
+        -moz-osx-font-smoothing: auto;
+      }
+      body {
+        margin: 0;
+        display: grid;
+        place-content: center;
+        background: black;
+        color: white;
+        font-family: sans-serif;
+        line-height: 1.6rem;
+        padding: 64px;
+        font-family: "Nunito Sans", sans-serif;
+        background-image: url("background.jpg");
+        background-repeat: repeat-y;
+        background-size: 100%;
+      }
+      @media (max-width: 800px) {
+        body {
+          padding: 32px;
+        }
+      }
+      h1 {
+        line-height: 1.3em;
+        margin-top: 0;
+        color: red;
+        font-family: font-medium, "Nunito Sans", sans-serif;
+        font-weight: normal;
+        font-size: 2.2rem;
+      }
+      .main-right h1 {
+        color: #3737ff;
+      }
+      .overlay {
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1000;
+      }
+      .button {
+        display: inline-block;
+        border: 2px solid red;
+        font-weight: bold;
+        background: none;
+        font-family: Nunito Sans, sans-serif;
+        font-weight: bold;
+        padding: 12px 20px;
+        border-radius: 1000px;
+        cursor: pointer;
+        margin-right: 16px;
+        color: red;
+        background: rgba(0, 0, 0, 0.5);
+      }
+      .button:hover {
+        background: rgba(0, 0, 0, 0.9);
+        transition: all 0.3s;
+      }
+      img {
+        display: block;
+        width: 100vw;
+      }
+      .main {
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        grid-gap: 64px;
+      }
+      @media (max-width: 800px) {
+        .main {
+          grid-template-columns: 1fr;
+        }
+      }
+      .main-right .button {
+        border-color: #3737ff;
+        color: #3737ff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <img src="coverart.jpg" /> -->
+    <div class="overlay"></div>
+    <div class="main">
+      <div class="main-left">
+        <h1>"Siis leiad sa selle"</h1>
+        <p>
+          <b>eˉlektroni jõulukingitus<br />Autor: Taavet Jansen</b>
+        </p>
+        <p>
+          “Siis leiad sa selle” on lavastus Sulle. Kergelt ootamatu formaat ja
+          kontekst, natuke poeetiline sisu, äärmiselt siiras kavatsus. Lae
+          tasuta alla ja naudi või osta NFT-na, kui sinu isiklik kunstiteos
+          galaktikatevahelises plokiahela universumis.
+        </p>
+        <p>
+          See, et sa oled siia lehele jõudnud, tähendab, et oled meid väga palju
+          mõjutanud ja me oleme sulle tänulikud. Loodame olla sulle hea kaaslane
+          ja pakkuda kvaliteetset sisu ka edaspidi. Samal ajal püüame Sinuga
+          luua tõelist ning kestvat ühendust, mis tahes kanalite kaudu kuhu
+          loomingulisus meid suunab.
+        </p>
+        <p>Aitäh sulle.</p>
+        <p>
+          <a class="button" download>Lae alla ZIP fail (80MB)</a>
+        </p>
+        <p><a class="button">Osta lavastus NFTna</a></p>
+      </div>
+      <div class="main-right">
+        <h1>"And then you’ll find it"</h1>
+        <p>
+          <b>eˉlektron Christmas present <br />by Taavet Jansen</b>
+        </p>
+        <p>
+          "And then you’ll find it" is a performance for you. Slightly
+          unexpected in format and context, little bit poetic in content and
+          hugely sincere in purpose. Download for free and enjoy as is or grab
+          it as NFT, as your personal artwork in the intergalactic blockchain
+          universe.
+        </p>
+        <p>
+          By arriving here means you have had an impact on our existence and we
+          appreciate it. We hope to be a good companion and deliver quality
+          content as we strive forth in search of establishing a true and long
+          lasting connection through whatever channels our creativity might
+          find.
+        </p>
+        <p>Thank you.</p>
+        <p><a class="button" download>Download ZIP file (80MB)</a></p>
+        <p><a class="button">Buy as a NFT</a></p>
+      </div>
+    </div>
+  </body>
+</html>
